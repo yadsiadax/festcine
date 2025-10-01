@@ -1,0 +1,156 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #0d0d0d;
+  color: #f1faee;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.9)),
+    url("https://source.unsplash.com/random/1200x600/?cinema,la-paz") no-repeat
+      center center/cover;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #e63946;
+  color: white;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(230, 57, 70, 0.4);
+}
+
+.cta-button:hover {
+  background-color: #c1121f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(230, 57, 70, 0.6);
+}
+
+/* Objetivo */
+.objetivo {
+  background-color: #1a1a1a;
+}
+
+.objetivo h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffd166;
+}
+
+.objetivo p {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Testimonios */
+.testimonios {
+  background-color: #0d0d0d;
+}
+
+.testimonios h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #a8dadc;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.card .author {
+  font-weight: bold;
+  color: #ffd166;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #000;
+  font-size: 1rem;
+  color: #a8dadc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+  }
+
+  .objetivo h2,
+  .testimonios h2 {
+    font-size: 2rem;
+  }
+}
